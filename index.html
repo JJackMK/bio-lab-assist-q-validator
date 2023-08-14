@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Validator</title>
+    <style>
+        body {
+            font-family: 'Calibri', sans-serif;
+            text-align: center;
+        }
+
+        #header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+#output {
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">BioLabAssist Question Validator</div>
+    <input type="text" id="urlInput" placeholder="Enter Google Sheets link..." />
+    <button onclick="validateCSV()">Validate</button>
+    <div id="output"></div>
+
+    <script src="validator.js"></script>
+</body>
+
+</html>
